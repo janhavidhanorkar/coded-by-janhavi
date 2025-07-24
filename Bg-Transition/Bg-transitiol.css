@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('forest-moon.jpg'); /* Default background */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: background-image 0.5s ease-in-out;
+}
+
+.container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    color: white;
+    font-size: 24px;
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color:/* #007bff;*/ rgb(84, 106, 167);
+    color: white;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: /* #0056b3; */ rgb(16, 40, 79)
+}

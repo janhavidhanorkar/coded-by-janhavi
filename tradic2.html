@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Advertisement Page</title>
+    <link rel="stylesheet" href="triadic2.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">WISTIA</div>
+        <nav>
+            <ul>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Platform</a></li>
+                <li><a href="#">Integrations</a></li>
+                <li><a href="#">Soapbox</a></li>
+                <li><button id="signup-btn">Sign Up</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Warning: Excessive creativity may result in fame, fortune, and really cool projects.</h1>
+        <button class="btn" id="watch-video">Watch Video</button>
+    </section>
+
+    <!-- Sections -->
+    <section class="features">
+        <!-- Calendar Section -->
+        <div class="feature-box yellow">
+            <h2>Mark Your Dates </h2>
+            <p>Click the button to view the calendar.</p>
+            <button class="btn" id="calendar-btn">Show Today-Date</button>
+            <div class="calendar" id="calendar"></div>
+        </div>
+
+        <!-- Quotes Section -->
+        <div class="feature-box green">
+            <h2>Explore the Unknown</h2>
+            <p>Click a button to display a quote.</p>
+            <div class="quote-buttons">
+                <button class="small-btn" data-quote="A day on Venus is longer than a year on Venus! 😲">1</button>
+                <button class="small-btn" data-quote="Your bones are actually stronger than steel! 💪">2</button>
+                <button class="small-btn" data-quote="Google was originally called “Backrub”!😂">3</button>
+                <button class="small-btn" data-quote="Sharks existed before trees! 🌊🦈">4</button>
+            </div>
+            <div class="quote-display" id="quote-display"></div>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="feature-box blue">
+            <h2>Connect With Us</h2>
+            <p>Name:  Rohit Sharma</p>
+            <p>Email: example@email.com</p>
+            <p>Phone: +123 456 7890</p>
+            <p>Address: XYZ Street, City</p>
+        </div>
+    </section>
+
+    <!-- Signup Form -->
+    <div class="signup-form" id="signup-form">
+        <h2>Sign Up</h2>
+        <input type="text" placeholder="Enter Name">
+        <input type="email" placeholder="Enter Email">
+        <input type="password" placeholder="Enter Password">
+        <button class="btn" id="close-signup">Close</button>
+    </div>
+
+    <!-- JavaScript Link -->
+    <script src="triadic2.js.js"></script>
+
+</body>
+</html>

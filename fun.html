@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>College Vibes 2025</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    body {
+      scroll-behavior: smooth;
+      font-family: 'Segoe UI', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-blue-100 to-white text-gray-800">
+
+  <!-- Hero Section -->
+  <section class="h-screen flex items-center justify-center flex-col text-center" data-aos="fade-up">
+    <h1 class="text-5xl md:text-6xl font-bold text-blue-700">Welcome, Students of 2025!</h1>
+    <p class="mt-4 text-xl">Your digital campus starts here 🎓</p>
+    <a href="#fun" class="mt-8 px-6 py-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-all">
+      Scroll for Fun ↓
+    </a>
+  </section>
+
+  <!-- About Section -->
+  <section class="min-h-screen px-6 py-20 bg-white" data-aos="fade-right">
+    <h2 class="text-4xl font-bold text-center text-blue-600 mb-8">🌟 About This Site</h2>
+    <p class="max-w-3xl mx-auto text-lg text-center">
+      This website is built for you — to chill, learn, and laugh! Whether you're attending lectures or just vibing with friends, this space is your digital buddy.
+    </p>
+  </section>
+
+  <!-- Fun Activities -->
+  <section id="fun" class="min-h-screen px-6 py-20 bg-yellow-50" data-aos="fade-left">
+    <h2 class="text-4xl font-bold text-center text-yellow-600 mb-8">🎉 Fun Activities</h2>
+    <div class="grid md:grid-cols-2 gap-10 max-w-4xl mx-auto">
+
+      <!-- Random Joke Generator -->
+      <div class="bg-white p-6 rounded-xl shadow-md">
+        <h3 class="text-xl font-semibold mb-4">😂 Random Joke Generator</h3>
+        <p id="joke" class="mb-4">Click the button to get a laugh!</p>
+        <button onclick="generateJoke()" class="px-4 py-2 bg-yellow-500 text-white rounded hover:bg-yellow-600">
+          Tell Me A Joke
+        </button>
+      </div>
+
+      <!-- Quick Quiz -->
+      <div class="bg-white p-6 rounded-xl shadow-md">
+        <h3 class="text-xl font-semibold mb-4">🧠 Quick Quiz</h3>
+        <p class="mb-2">Q: What is the full form of HTML?</p>
+        <ul class="space-y-2">
+          <li><button onclick="alert('Try again!')" class="bg-gray-200 px-3 py-2 rounded">Hyper Tool Marking Language</button></li>
+          <li><button onclick="alert('✅ Correct!')" class="bg-gray-200 px-3 py-2 rounded">Hyper Text Markup Language</button></li>
+          <li><button onclick="alert('Oops! Nope.')" class="bg-gray-200 px-3 py-2 rounded">Hyper Technical Machine Learning</button></li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-10 bg-blue-100 text-blue-700" data-aos="zoom-in">
+    Made with 💙 by College Coders 2025
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+
+    function generateJoke() {
+      const jokes = [
+        "Why did the developer go broke? Because he used up all his cache.",
+        "Why don’t scientists trust atoms? Because they make up everything!",
+        "I told my computer I needed a break, and it said: 'Why? I'm not tired!'",
+        "What's a programmer's favorite hangout place? The Foo Bar."
+      ];
+      const joke = jokes[Math.floor(Math.random() * jokes.length)];
+      document.getElementById("joke").innerText = joke;
+    }
+  </script>
+</body>
+</html>
+3

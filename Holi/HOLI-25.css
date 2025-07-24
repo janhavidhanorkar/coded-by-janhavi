@@ -1,0 +1,126 @@
+body {
+    display: flex;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #ffcccb;
+    transition: background 0.5s ease-in-out;
+}
+
+.sidebar {
+    width: 25%;
+    background: linear-gradient(to bottom, #ff6f61, #ffcccb);
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+.sidebar h2 {
+    font-size: 24px;
+    text-decoration: underline;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flip-image {
+    width: 90%;
+    margin: 10px 0;
+    transition: transform 0.7s;
+}
+
+.flip-image:hover {
+    transform: rotateY(150deg);
+}
+
+
+.main-content {
+    flex: 1;
+    text-align: center;
+    padding: 50px;
+}
+
+h1 {
+    font-size: 82px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+    margin-bottom: -15px;
+    margin-left: 110px;
+}
+
+.quote{
+    font-size: 30px;
+    font-style: cursive;
+    margin-bottom: 34px;
+    margin-left: -90px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.color-btn {
+    border: none;
+    padding: 15px 30px;
+    font-size: 28px;
+    color: #fff;
+    border-radius: 50px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.color-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.quote-text {
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    background: rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 35px;
+    border-radius: 10px;
+    text-align: center;
+    animation: wipeEffect 1s ease-in-out;
+}
+
+@keyframes wipeEffect {
+    from {
+        width: 0;
+        opacity: 0;
+    }
+    to {
+        width: 100%;
+        opacity: 1;
+    }
+}
+/* Background changes */
+.bg1 { background: linear-gradient(35deg,#FF0000 ,#fa2c2c, #fee568); }
+.bg2 { background: linear-gradient(35deg, #fbe202cd,#f0d90a,#f0c369, #fdf691); }
+.bg3 { background: linear-gradient(35deg, #174d19e0,#1d9025eb,#46c74f, #bbf6bd); }
+.bg4 { background: linear-gradient(35deg, #1b425c,#2d6488,#4c8ab3, #c2daf4); }
+.bg5 { background: linear-gradient(35deg, #2f1b35,#70447e,#ac6bc4, #f4ebfd); }
+.bg6 { background: linear-gradient(35deg, #8d183f,#f2125d,#ec5588, #f6dce1); }
+
+
+ 
